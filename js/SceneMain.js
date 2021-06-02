@@ -204,7 +204,7 @@ class SceneMain extends Phaser.Scene {
                     //  For every 5 items of food eaten, increases the snake's speed slightly.
                     if (this.speed > 20 && food.total % 5 === 0)
                     {
-                        this.speed -= 5;
+                        this.speed += 15;
                     }
     
                     return true;
@@ -281,7 +281,7 @@ update(time, delta) {
         }
     }
 /**
-* The food may be placed anywhere on the 40x30 grid,
+* The food may be placed anywhere on the 33x25 grid,
 * except on-top of the snake, so those squares need
 * to be filtered out of the possible food locations.
 *
